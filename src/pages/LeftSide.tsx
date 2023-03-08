@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-type Coordinate = { lon: number, lat: number }
+import { Coordinate } from '../common/declared'
 
 interface Props {
   coord1?: Coordinate,
   coord2?: Coordinate
 }
-
 export class LeftSide extends Component<Props> {
+  componentDidMount(): void {
+    console.log("???????")
+  }
   render() {
     return (
       <div>

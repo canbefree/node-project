@@ -71,7 +71,7 @@ map.setView(new View({
 
 
 map.on('click', evt => {
-  console.log(evt.coordinate)
+  console.log("click:",evt.coordinate)
   AMap.convertFrom(evt.coordinate, 'gps', function (status: any, result: any) {
     if (result.info === 'ok') {
       var lnglats = result.locations; // Array.<LngLat>

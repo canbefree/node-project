@@ -8,7 +8,7 @@ const config: Configuration = {
     mode: 'development',
     devtool: 'inline-source-map',
     entry: {
-        app: path.resolve(rootPath, 'src/main.ts'),
+        app: path.resolve(rootPath, 'src/main.tsx'),
     },
     
     module: {
